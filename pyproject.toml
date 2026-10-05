@@ -1,0 +1,11 @@
+[project]
+name = "mkdd-gamestate"
+version = "0.1.0"
+description = "mkdd-gamestate uses py-dolphin-memory-engine to extract game state from Mario Kart Double Dash and publishes it via MQTT"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "dolphin-memory-engine>=1.3.1",
+    "numpy>=2.5.2",
+    "paho-mqtt>=2.1.0",
+]

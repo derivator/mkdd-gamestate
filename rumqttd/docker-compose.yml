@@ -1,0 +1,9 @@
+services:
+  rumqttd:
+    image: bytebeamio/rumqttd
+    volumes:
+      - ./:/configs
+    ports:
+      - "1883:1883"
+      - "3030:3030"
+    command: -c /configs/config.toml
